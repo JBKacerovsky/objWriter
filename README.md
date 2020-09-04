@@ -5,7 +5,7 @@
 
 Examples for how these functions can be used and combined to save multiple different mesh objects (with different types of material/colour definitions) into a single obj file are shown in demo_obj.m 
 The resulting .obj and .mtl files have been uploaded as **examples** to poly.google.com: 
-- [googlePoly Example1](poly.google.com/view/5N0rs0RgEQV)
+- [googlePoly Example1](https://poly.google.com/view/5N0rs0RgEQV)
 - [googlePoly Example2](https://poly.google.com/view/60c2exp4Riu)
 
 The functions obj_write* make unix-specific system calls to use grep. This works for MacOS and all unix based OS, but will not run in Ms or some other OS. For systems that do not have command line "grep" available please use the functions starting with SYS_* in the folder systemIndependentFunnctions which use: 
