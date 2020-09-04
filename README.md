@@ -5,7 +5,7 @@
 
 Examples for how these functions can be used and combined to save multiple different mesh objects (with different types of material/colour definitions) into a single obj file are shown in demo_obj.m 
 The resulting .obj and .mtl files have been uploaded to poly.google.com: 
-[poly.google.com/view/5N0rs0RgEQV](url) as an **example output**.
+[https://poly.google.com/view/60c2exp4Riu](url) as an **example output**.
 
 The functions obj_write* make unix-specific system calls to use grep. This works for MacOS and all unix based OS, but will not run in Ms or some other OS. For systems that do not have command line "grep" available please use the functions starting with SYS_* in the folder systemIndependentFunnctions which use: 
 us (2020). grep: a pedestrian, very fast grep utility ([https://www.mathworks.com/matlabcentral/fileexchange/9647-grep-a-pedestrian-very-fast-grep-utility](url)), MATLAB Central File Exchange. Retrieved June 12, 2020. 
