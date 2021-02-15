@@ -87,7 +87,7 @@ function obj_write_color(FV, filename, colors, varargin)
 % Author: J. Benjamin Kacerovsky
 % Centre for Research in Neuroscience, McGill University
 % email: johannes.kacerovsky@mail.mcgill.ca
-% Created: 05-Jun-2020 ; Last revision: 09-Jun-2020 
+% Created: 05-Jun-2020 ; Last revision: 15-Feb-2021 
 
 % ------------- BEGIN CODE --------------
 
@@ -99,8 +99,8 @@ addRequired(p, 'FV', @isstruct);
 addRequired(p, 'filename', @isstr);
 addRequired(p, 'colors', dScal);
 addParameter(p, 'colorMap', 'jet', @isstr); 
-addParameter(p, 'cmin', min(colors(:)), numScal); 
-addParameter(p, 'cmax', max(colors(:)), numScal); 
+addParameter(p, 'cmin', double(min(colors(:))), numScal); 
+addParameter(p, 'cmax', double(max(colors(:))), numScal); 
 addParameter(p, 'RGB_bins', 512, numScal); 
 addParameter(p, 'd', 1, numScal); 
 addParameter(p, 'object', filename, @isstr);
